@@ -1,0 +1,46 @@
+.navbar{
+    height: 50px;
+    background-color:white;
+}
+.logo{
+    font-size: 50px;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.form {
+    background-color: #fff; 
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px #888888;
+}
+
+.box{
+    background-color: #f8f9fa; 
+    padding-top: 10px;
+    margin-top: 60px;
+}
+
+.underline{
+    text-decoration: none;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 20px;
+}
+/* .line{
+    text-decoration: none;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 20px;
+} */
+th {
+    border-bottom: 2px solid #000; /* Add a solid border at the bottom of each th */
+    padding-bottom: 5px; /* Add padding to adjust spacing between text and underline */
+}
+.search{
+    padding-right: 10px;
+} 
+
+

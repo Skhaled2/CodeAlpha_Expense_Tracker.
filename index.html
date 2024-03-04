@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="java/bootstrap.bundle.min.js"></script>
+
+    <title>CRUD</title>
+</head>
+<body>
+    <div class="container">
+         <div class="row justify-content-center">
+            <div class="col-md-8 box">
+            
+        <div class="form rounded">
+    <div class="w-100 background p-4">
+        <h1 class="underline"> 
+            Enter your product information
+        </h1>
+        <label for="productname"> product name <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="productname" required>
+        <div id="namealert"  class="alert alert-danger p-2 mt-3 d-none"> Name must contain only letters</div>
+
+        <label for="productprice"> product price <span class="text-danger">*</span></label>
+        <input type="number" class="form-control" id="productprice" required>
+        <div id="pricealert" class="alert alert-danger p-2 mt-3 d-none">price must contain only numbers  </div>
+
+
+        <label for="productcategory"> product category <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" id="productcategory" required>
+        <div id="catalert" class="alert alert-danger p-2 mt-3 d-none"> Category must contain only letters </div>
+
+
+        <label for="productdesc"> product description - <span class="text-success">optional</span></label>
+        <textarea class="form-control" id="productdesc" required></textarea>
+        <!-- <div id="descalert" class="alert alert-danger mt-3 d-none "> Start with capital letter </div> -->
+
+
+       <button disabled id="addbtn" class="btn btn-primary m-3">add product</button>
+       <!-- <button disabled id="updatebtn" class="btn btn-primary m-3">update</button> -->
+
+
+        <input onkeyup="search(this.value)" type="text" class="form-control search" placeholder="search by name..." >
+        <div class="table-responsive col-12 col-sm-12 col-lg-12 w-100" >
+        <table class="table table-hover table-striped text-capitalize w-100" style="margin-top: 20px"> 
+            <thead>
+                <th> product name</th>
+                <th> product price</th>
+                <th> product category</th>
+                <th> product description</th>
+            </thead>
+            <tbody id="tablebody">
+            </tbody>
+        </table>
+    </div>
+    </div>
+        </div>
+            </div>
+</div>
+</div>
+
+<script src="java/style.js"></script>
+</body>
+</html>
